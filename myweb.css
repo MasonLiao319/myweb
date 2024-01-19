@@ -22,8 +22,8 @@ h2 {
 /* avatar */
 #avatar {
   height: 50px;
-  width: 55px;
-  border-radius: 20%;
+  width: 75px;
+ ;
 
 }
 
@@ -46,7 +46,7 @@ h2 {
 .navsec {
   display: flex;
   flex-direction: row;
-  background-color: #0a3a6d;
+  background-color:rgb(23, 20, 66) ;
   justify-content: space-evenly;
   padding: 15px;
 
