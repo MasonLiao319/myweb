@@ -5,14 +5,26 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   background-color: rgb(12, 12, 51);
-  background-image: url(images/background.jpg);
+  background-image: url(background.jpg);
   opacity: 0.95;
 }
+
+
+
+
 
 
 h2 {
   color: #e3e4e4
 }
+/* avatar */
+#avatar {
+  height: 50px;
+  width: 75px;
+ ;
+
+}
+
 
 /* header */
 
@@ -21,20 +33,14 @@ h2 {
   text-decoration: none;
 }
 
-/* #name {
+#name {
   justify-content: left;
   font-family: 'Permanent Marker';
   font-size: xx-large;
   color: #f07131;
 
-} */
-
-#avatar {
-  height: 50px;
-  width: 75px;
- ;
-
 }
+
 .navsec {
   display: flex;
   flex-direction: row;
@@ -67,60 +73,121 @@ h2 {
 .nav a:hover {
   color: #f07131;
 }
+/* Portfolio */
 
 
 
-/* experience */
-.wrap {
-  margin-top: auto;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  row-gap: 60px;
-  column-gap: 60px;
-  justify-content: center;
+#main_items {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+ 
+}
+
+
+
+
+.dynamic {
+  background-image:url(article.jpg);
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-
 }
 
-.p_header {
-  height: 68px;
-  background-image: url(images/grid.jpg);
-  border-radius: 5px;
+/* 选择class为item_p的元素，设置它的字体大小为16px，以及文本居中对齐 */
+.item_p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  
 }
 
-.wrapper {
-  display: grid;
-  background-color: #1e3c5b;
-  background-image: url(images/article1.jpg);
-  width: 550px;
-  height: 300px;
-  border-radius: 5px;
-
-}
-
-#title {
-  margin-bottom: 0;
-}
-
-#describe {
-  margin-top: 0;
-}
 
 #emphasize {
   color: #f07131;
   font-size: x-large;
   font-family: 'Permanent Marker';
   font-weight: 700;
+  text-align: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+ul.actions li:last-child {
+  padding-right: 0;
+}
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 450;
+  height: 3.5em;
+  line-height: 3.5em;
+  padding: 0 2em 0 2.375em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.325em;
+  font-size: 0.8em;
+}
+
+.button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #666666;
+  color: #f2f2f2 !important;
+}
+
+.button:hover {
+  color: #EF6480 !important;
+  box-shadow: inset 0 0 0 2px #EF6480;
+}
+
+.button:active {
+  background-color: rgba(239, 100, 128, 0.15);
+}
+
+.button:before {
+  color: #ffffff;
 }
 
 
-/* social_meidia */
+
+/* Social_media */
+
+
 #contact {
 
-
+  position: relative;
   bottom: 0;
   text-align: center;
   background-color: rgb(23, 20, 66);
@@ -130,7 +197,6 @@ h2 {
   justify-content: space-evenly;
   ;
 }
-
 
 .social-media a {
   text-decoration: none;
@@ -152,13 +218,15 @@ h2 {
   border-radius: 49%;
 }
 
-/* Mobile */
+/* Mobile responsiveness for various mobile devices */
 @media screen and (max-width: 480px) {
+
+  /* body */
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-
+    background-image: url(images/background.jpg);
 
   }
 
@@ -166,9 +234,65 @@ h2 {
     font-size: 24px;
   }
 
+  .navbar a {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    padding: 8px 10px;
+
+  }
+
+  /* banner */
+  .mypic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* skill */
+  #personalSkills {
+    font-size: 25px;
+
+  }
+
+  .skills img {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    margin: 8px;
 
 
-  
+  }
+
+
+
+  /* nav_menu */
+  .navsec {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+
+  }
+
+  /* .search-bar input[type="text"] {
+    width: 90px;
+    font-size: 12px;
+    height: 15px
+  }
+
+
+
+  .search-bar button {
+    width: 50px;
+    font-size: 12px;
+    margin-left: 8px;
+    height: 25px
+  } */
+
+
 
   .nav {
     display: flex;
@@ -186,6 +310,8 @@ h2 {
     font-size: 16px;
   }
 
+
+  /* social-media */
   .social-media {
     padding: 15px;
     justify-content: space-evenly;
@@ -200,24 +326,4 @@ h2 {
     height: 35px;
     border-radius: 50%;
   }
-
-
-  /* project */
-  .wrap {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-
-  }
-
-
-  #describe {
-    font-size: 13px;
-  }
-
-
 }

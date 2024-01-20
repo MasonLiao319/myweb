@@ -5,14 +5,26 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   background-color: rgb(12, 12, 51);
-  background-image: url(images/background.jpg);
+  background-image: url(background.jpg);
   opacity: 0.95;
 }
+
+
+
+
 
 
 h2 {
   color: #e3e4e4
 }
+/* avatar */
+#avatar {
+  height: 50px;
+  width: 75px;
+ ;
+
+}
+
 
 /* header */
 
@@ -21,20 +33,14 @@ h2 {
   text-decoration: none;
 }
 
-/* #name {
+#name {
   justify-content: left;
   font-family: 'Permanent Marker';
   font-size: xx-large;
   color: #f07131;
 
-} */
-
-#avatar {
-  height: 50px;
-  width: 75px;
- ;
-
 }
+
 .navsec {
   display: flex;
   flex-direction: row;
@@ -67,8 +73,7 @@ h2 {
 .nav a:hover {
   color: #f07131;
 }
-
-/* hobbies */
+/* Portfolio */
 #slideshow {
   position: relative;
   width: 700px;
@@ -92,12 +97,53 @@ h2 {
 }
 
 
-/* Mobile */
+
+
+/* Social_media */
+
+
+#contact {
+
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(23, 20, 66);
+  color: white;
+  padding: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  ;
+}
+
+.social-media a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+  color: azure;
+}
+
+.social-media a:hover {
+  color: #f07131;
+
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  border-radius: 49%;
+}
+
+/* Mobile responsiveness for various mobile devices */
 @media screen and (max-width: 480px) {
+
+  /* body */
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-image: url(images/background.jpg);
 
   }
 
@@ -105,14 +151,31 @@ h2 {
     font-size: 24px;
   }
 
+  .navbar a {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    padding: 8px 10px;
+
+  }
+
+
+
+
+
+
 
   /* nav_menu */
   .navsec {
     flex-direction: column;
     align-items: center;
     margin-left: 0;
-    width: 100%;
+
   }
+
+
+
+
 
   .nav {
     display: flex;
@@ -129,7 +192,7 @@ h2 {
   .nav a {
     font-size: 16px;
   }
-
+  
   /* slideshow */
   #slideshow {
     position: relative;
@@ -154,6 +217,22 @@ h2 {
   }
 
 
+  /* social-media */
+  .social-media {
+    padding: 15px;
+    justify-content: space-evenly;
+  }
 
+  .social-media a {
+    font-size: 9px;
+  }
+
+  .social-media img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+ 
 
 }

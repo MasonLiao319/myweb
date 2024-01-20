@@ -5,14 +5,26 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   background-color: rgb(12, 12, 51);
-  background-image: url(images/background.jpg);
+  background-image: url(background.jpg);
   opacity: 0.95;
 }
+
+
+
+
 
 
 h2 {
   color: #e3e4e4
 }
+/* avatar */
+#avatar {
+  height: 50px;
+  width: 75px;
+ ;
+
+}
+
 
 /* header */
 
@@ -21,13 +33,14 @@ h2 {
   text-decoration: none;
 }
 
-/* avatar */
-#avatar {
-  height: 50px;
-  width: 75px;
- ;
+#name {
+  justify-content: left;
+  font-family: 'Permanent Marker';
+  font-size: xx-large;
+  color: #f07131;
 
 }
+
 .navsec {
   display: flex;
   flex-direction: row;
@@ -36,16 +49,6 @@ h2 {
   padding: 15px;
 
 }
-
-
-/* #name {
-  justify-content: left;
-  font-family: 'Permanent Marker';
-  font-size: xx-large;
-  color: #f07131;
-
-} */
-
 
 .nav {
   list-style: none;
@@ -70,10 +73,9 @@ h2 {
 .nav a:hover {
   color: #f07131;
 }
+/* Portfolio */
 
-
-
-/* resume.html */
+ /* resume.html */
 #resume {
   display: flex;
   max-width: 100%;
@@ -84,13 +86,51 @@ h2 {
 }
 
 
-/* Mobile */
+/* Social_media */
+
+
+#contact {
+
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(23, 20, 66);
+  color: white;
+  padding: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  ;
+}
+
+.social-media a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+  color: azure;
+}
+
+.social-media a:hover {
+  color: #f07131;
+
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  border-radius: 49%;
+}
+
+/* Mobile responsiveness for various mobile devices */
 @media screen and (max-width: 480px) {
+
+  /* body */
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-
+    background-image: url(images/background.jpg);
 
   }
 
@@ -98,14 +138,65 @@ h2 {
     font-size: 24px;
   }
 
+  .navbar a {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    padding: 8px 10px;
+
+  }
+
+  /* banner */
+  .mypic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* skill */
+  #personalSkills {
+    font-size: 25px;
+
+  }
+
+  .skills img {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    margin: 8px;
 
 
+  }
+
+
+
+  /* nav_menu */
   .navsec {
     flex-direction: column;
     align-items: center;
     margin-left: 0;
-    width: 100%;
+
   }
+
+  /* .search-bar input[type="text"] {
+    width: 90px;
+    font-size: 12px;
+    height: 15px
+  }
+
+
+
+  .search-bar button {
+    width: 50px;
+    font-size: 12px;
+    margin-left: 8px;
+    height: 25px
+  } */
+
+
 
   .nav {
     display: flex;
@@ -123,6 +214,8 @@ h2 {
     font-size: 16px;
   }
 
+
+  /* social-media */
   .social-media {
     padding: 15px;
     justify-content: space-evenly;
@@ -138,14 +231,12 @@ h2 {
     border-radius: 50%;
   }
 
-  /* resume */
-  #resume_pic {
+   /* resume */
+   #resume_pic {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-
-
 
 }
