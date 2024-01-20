@@ -143,7 +143,7 @@ h2 {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-image: url(images/background.jpg);
+    background-image: url(background.jpg);
 
   }
 
@@ -192,7 +192,7 @@ h2 {
   .nav a {
     font-size: 16px;
   }
-  
+
   /* slideshow */
   #slideshow {
     position: relative;
