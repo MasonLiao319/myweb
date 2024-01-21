@@ -73,6 +73,19 @@ h2 {
 .nav a:hover {
   color: #f07131;
 }
+
+.item_p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.content{
+  
+  margin-top: 50px;
+}
+
+
 /* Portfolio */
 #slideshow {
   position: relative;
@@ -222,7 +235,7 @@ h2 {
   .social-media {
     padding: 15px;
     justify-content: space-evenly;
-    margin-bottom: 80px;
+    margin-top: 50px;
   }
 
   .social-media a {
@@ -235,6 +248,16 @@ h2 {
     border-radius: 50%;
   }
 
+  .item_p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+  
+  .content{
+    
+    padding: 40px;
+  }
  
 
 }
