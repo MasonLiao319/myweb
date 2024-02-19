@@ -44,7 +44,7 @@ h2 {
 .navsec {
   display: flex;
   flex-direction: row;
-  background-color: rgb(3, 17, 58);
+  background-color: #000208;
   justify-content: space-evenly;
   padding: 15px;
 
@@ -75,7 +75,6 @@ h2 {
 }
 /* Portfolio */
 
-/* 根据您给出的HTML代码和CSS样式，写出相应的CSS规则 */
 
 /* 选择id为main_items的元素，设置它的宽度为80%，居中显示，以及边框为1px的实线 */
 #main_items {
@@ -122,7 +121,7 @@ h2 {
   position: relative;
   bottom: 0;
   text-align: center;
-  background-color: rgb(3, 17, 58);
+  background-color: #000208;
   color: white;
   padding: 14px;
   display: flex;

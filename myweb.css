@@ -46,7 +46,7 @@ h2 {
 .navsec {
   display: flex;
   flex-direction: row;
-  background-color:rgb(3, 17, 58) ;
+  background-color:#000208 ;
   justify-content: space-evenly;
   padding: 15px;
 
@@ -406,7 +406,7 @@ ul.actions li:last-child {
   position: relative;
   bottom: 0;
   text-align: center;
-  background-color: rgb(3, 17, 58);
+  background-color:#000208 ;
   color: white;
   padding: 14px;
   display: flex;
