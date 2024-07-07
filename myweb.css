@@ -12,7 +12,14 @@ body {
 
 
 
+#hyper a {
+  color: #FFC0CB; /* 设置链接颜色为粉红色 */
+  text-decoration: none; /* 去除下划线 */
+}
 
+#hyper a:hover {
+  color: #b2bde3; 
+}
 
 
 h2 {
